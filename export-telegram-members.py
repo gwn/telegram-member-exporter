@@ -86,5 +86,7 @@ def main():
 
     print('\nKopyalayıp münasip yere yapıştırabilirsin. Rica ederim.....\n')
 
+    input()
+
 
 main()
