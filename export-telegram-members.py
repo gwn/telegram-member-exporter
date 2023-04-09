@@ -16,6 +16,13 @@ def main():
         print('\nAPI ID ve hash aldıktan sonra geri dönüp programı tekrar çalıştırınız\n')
         exit(1)
 
+    two_step_verif_answer = input('\nTelegram hesabınızda 2FA aktif mi? Bilmiyorsanız da evet diyin. e/h: ')
+
+    if two_step_verif_answer == 'e':
+        print('\nTelegram "two step verification" özelliğini programı kullanabilmek için geçici olarak kapatın.')
+        print('\nBilgi: https://telegram.org/blog/sessions-and-2-step-verification\n')
+        exit(1)
+
     print('\nAPI bilgilerizi giriniz. Yanlış girerseniz program hata verecektir\n')
 
     api_id = input('API ID: ')
